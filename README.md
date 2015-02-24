@@ -5,8 +5,6 @@ Here's my Arduino library for the TI HDC1000 temperature and humidity sensor. It
 
 More details about the library and my breakout board for the chip on my website http://b.truzzi.me/hdc1000-temperature-and-humidity-sensor-breakout-with-arduino-library/.
 
-## Features and commands
-
 ### Setup your sensor:
 First, declare it:
 
