@@ -3,7 +3,7 @@ HDC1000 Arduino Library
 
 Here's my Arduino library for the TI HDC1000 temperature and humidity sensor. It should work with the HDC1008 too but I haven't tested it.
 
-More details about the library and my breakout board for the chip on my website http://truzzi.me.
+More details about the library and my breakout board for the chip on my website http://b.truzzi.me/hdc1000-temperature-and-humidity-sensor-breakout-with-arduino-library/.
 
 ## Features and commands
 
