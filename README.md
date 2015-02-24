@@ -22,7 +22,7 @@ Then, initialize it:
 
 Default options are set to enable both temperature and humidity readings, at 14-bit resolution, with the integrated heater on. You can change them by initializing your sensor like this:
 
-`mySensor.begin(mode, resolution, heater)`
+`mySensor.begin(mode, resolution, heater);`
 
 "mode" can be _HDC1000_SINGLE_MEASUR_, _HDC1000_BOTH_TEMP_HUMI_ or _HDC1000_RST_.
 
@@ -33,13 +33,14 @@ Default options are set to enable both temperature and humidity readings, at 14-
 ### Read some values
 You can read temperature and humidity by using the following commands:
 
-`double temperature = mySensor.getTemp();` in Celsius degrees
+`double temperature = mySensor.getTemp();` in Celsius degrees.
 
 `double humidity = mySensor.getHumi();` in %
 
 You can also access raw values from the sensor:
 
 `uint16_t temp = mySensor.getRawTemp();`
+
 `uint16_t humi = mySensor.getRawHumi();`
 
 ### Check your battery
