@@ -2,6 +2,7 @@
 #include <HDC1000.h>
  
 HDC1000 mySensor;
+//HDC1000 mySensor(0x40, 2) <-- DRDYn enabled and connected to Arduino pin 2 (allows for faster measuraments).
  
 void setup(){
 	Serial.begin(9600);

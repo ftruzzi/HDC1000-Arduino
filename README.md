@@ -10,9 +10,9 @@ First, declare it:
 
 `HDC1000 mySensor;`
 
-Default address is 0x40. You can change it by declaring your sensor like this:
+Default address is 0x40 and the DRDYn pin is disabled. You can change your address by declaring your sensor like this:
 
-`HDC1000 mySensor(addr);`
+`HDC1000 mySensor(addr. DRDYn_pin);`
 
 Then, initialize it:
 

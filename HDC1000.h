@@ -44,7 +44,7 @@ Released under GNU GPL v2.0 license.
 
 class HDC1000{
 	public: 
-		HDC1000(uint8_t address = HDC1000_ADDR);
+		HDC1000(uint8_t address = HDC1000_ADDR, int drdyn_pin = -1);
 
 		uint8_t begin(uint8_t mode = HDC1000_BOTH_TEMP_HUMI, uint8_t resolution = HDC1000_TEMP_HUMI_14BIT, uint8_t heater = HDC1000_HEAT_ON);
 
@@ -59,8 +59,8 @@ class HDC1000{
 		uint16_t readConfig(void);
 
 	private:
-  		uint8_t _addr;
-  		uint16_t read16(uint16_t dest);
+  		uint8_t _addr, _drdyn_pin;
+  		uint16_t read16();
   		void setReadRegister(uint8_t reg);
   		void setConfig(uint8_t config);
 };
