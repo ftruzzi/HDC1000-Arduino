@@ -10,10 +10,10 @@ void setup(){
 }
  
 void loop(){
-    Serial.print("Temperature: ");
-    Serial.print(mySensor.getTemp()); 
-    Serial.print("C, Humidity: ");     
-    Serial.print(mySensor.getHumi());
-    Serial.println("%");
+	Serial.print("Temperature: ");
+	Serial.print(mySensor.getTemp()); 
+	Serial.print("C, Humidity: ");     
+	Serial.print(mySensor.getHumi());
+	Serial.println("%");
 	delay(1000);
 }
