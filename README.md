@@ -12,7 +12,7 @@ First, declare it:
 
 Default address is 0x40 and the DRDYn pin is disabled. You can change your address by declaring your sensor like this:
 
-`HDC1000 mySensor(addr. DRDYn_pin);`
+`HDC1000 mySensor(addr, DRDYn_pin);`
 
 Then, initialize it:
 
