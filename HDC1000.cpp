@@ -15,12 +15,9 @@ Released under GNU GPL v2.0 license.
 
 HDC1000::HDC1000(uint8_t address, int drdyn_pin){
 	_addr = address;
+    _drdyn_pin = drdyn_pin;
 
-	if(drdyn_pin != -1){
-		_drdyn_pin = drdyn_pin;
-		pinMode(_drdyn_pin, INPUT);
-	}
-	
+	if(_drdyn_pin > -1) pinMode(_drdyn_pin, INPUT);
 }
 
 uint8_t HDC1000::begin(uint8_t mode, uint8_t resolution, uint8_t heater){
@@ -44,7 +41,7 @@ void HDC1000::setReadRegister(uint8_t reg){
 	Wire.write(reg);
 	Wire.endTransmission();
 
-	if(_drdyn_pin != -1) while(digitalRead(_drdyn_pin)==HIGH); //using DRDYn pin
+	if(_drdyn_pin > -1) while(digitalRead(_drdyn_pin)==HIGH); //using DRDYn pin
 	else delay(20);	//using 20ms delay instead
 }
 

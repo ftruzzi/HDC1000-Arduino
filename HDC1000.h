@@ -59,7 +59,8 @@ class HDC1000{
 		uint16_t readConfig(void);
 
 	private:
-  		uint8_t _addr, _drdyn_pin;
+  		int _drdyn_pin;
+        uint8_t _addr;
   		uint16_t read16();
   		void setReadRegister(uint8_t reg);
   		void setConfig(uint8_t config);
