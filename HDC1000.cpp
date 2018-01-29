@@ -15,7 +15,7 @@ Released under GNU GPL v2.0 license.
 
 HDC1000::HDC1000(uint8_t address, int drdyn_pin){
 	_addr = address;
-    _drdyn_pin = drdyn_pin;
+	_drdyn_pin = drdyn_pin;
 
 	if(_drdyn_pin > -1) pinMode(_drdyn_pin, INPUT);
 }
